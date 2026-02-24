@@ -5,6 +5,7 @@ const nameInput = document.getElementById("attendeeName");
 const teamSelect = document.getElementById("teamSelect");
 const attendeeCount = document.getElementById("attendeeCount");
 const progressBar = document.getElementById("progressBar");
+const greeting = document.getElementById("greeting");
 
 // Track attendance
 
@@ -35,11 +36,13 @@ form.addEventListener("submit", function (event) {
 
   // update team counter
   const teamCounter = document.getElementById(`${team}Count`);
-  teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
+  const currentTeamCount = parseInt(teamCounter.textContent, 10);
+  teamCounter.textContent = currentTeamCount + 1;
 
   // show welcome message
   const message = `Welcome, ${name} from ${teamName}!`;
   console.log(message);
+  greeting.textContent = message;
 
   form.reset();
 });
