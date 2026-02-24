@@ -16,7 +16,7 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   // Get form values
-  const name = nameInput.value;
+  const name = nameInput.value.trim();
   const team = teamSelect.value;
   const teamName = teamSelect.options[teamSelect.selectedIndex].text;
 
