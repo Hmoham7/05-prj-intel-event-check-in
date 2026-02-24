@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -237,6 +238,17 @@ button .fas {
   transition: width 0.6s ease;
 }
 
+#goalMessage {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #003c71;
+  background-color: #e8f4fc;
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: none;
+}
+
 /* Adjust spacing between components */
 .container {
   margin-top: 0;
@@ -346,6 +358,51 @@ select {
   font-size: 15px;
   font-weight: 500;
   color: #475569;
+}
+
+.team-count {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.attendee-list-wrap {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.attendee-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.attendee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.attendee-item:last-child {
+  border-bottom: none;
+}
+
+.attendee-team {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.attendee-empty {
+  padding: 14px;
+  color: #64748b;
+  background-color: #f8fafc;
+  text-align: center;
 }
 
 /* Mobile responsive */
